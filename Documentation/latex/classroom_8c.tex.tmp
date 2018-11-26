@@ -1,0 +1,331 @@
+\hypertarget{classroom_8c}{}\section{classroom.\+c File Reference}
+\label{classroom_8c}\index{classroom.\+c@{classroom.\+c}}
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$G\+L/glut.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}primitive.\+h\char`\"{}}\newline
+Include dependency graph for classroom.\+c\+:
+% FIG 0
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classroom_8c_a45ddafcbdb98fd1d29ddb26cfaf9bc5f}{podium\+Final} ()
+\begin{DoxyCompactList}\small\item\em Dice. \end{DoxyCompactList}\item 
+void \hyperlink{classroom_8c_a2547a98dc1e6d988f39ef2eaa2dba6d0}{teacher\+Table} ()
+\begin{DoxyCompactList}\small\item\em Teacher\textquotesingle{}s Table. \end{DoxyCompactList}\item 
+void \hyperlink{classroom_8c_a0119467e1ce41ffb01b5081d6941efdf}{stage\+Final} ()
+\begin{DoxyCompactList}\small\item\em Stage. \end{DoxyCompactList}\item 
+void \hyperlink{classroom_8c_afbf920de5c6b004c523e1f1044e6668e}{kettle} ()
+\begin{DoxyCompactList}\small\item\em Kettle. \end{DoxyCompactList}\item 
+void \hyperlink{classroom_8c_a28f144e3ae325aa63fb91a6b75eaba6e}{board} ()
+\begin{DoxyCompactList}\small\item\em Green Board. \end{DoxyCompactList}\item 
+void \hyperlink{classroom_8c_a767b5b39f5fc46dd4681200b115cc560}{dustbin} ()
+\begin{DoxyCompactList}\small\item\em Dustbin. \end{DoxyCompactList}\item 
+void \hyperlink{classroom_8c_a19f39b451e2f3ae84c28c6d60ea6cce9}{movedustbin} ()
+\begin{DoxyCompactList}\small\item\em Move Dustbin. \end{DoxyCompactList}\item 
+void \hyperlink{classroom_8c_a36da52bf2f0fb2250a853881e99784d3}{door} ()
+\begin{DoxyCompactList}\small\item\em Door. \end{DoxyCompactList}\item 
+void \hyperlink{classroom_8c_ac70e5256caddd8938e124804765a924e}{student\+Table} ()
+\begin{DoxyCompactList}\small\item\em Student\textquotesingle{}s Bench. \end{DoxyCompactList}\item 
+void \hyperlink{classroom_8c_a849eed1989d75b24db77950570675ad5}{combined\+Student\+Table} ()
+\item 
+void \hyperlink{classroom_8c_a2e6fc65854be6d6cbc04fab0849bf696}{combined\+Chair} ()
+\begin{DoxyCompactList}\small\item\em Chair. \end{DoxyCompactList}\item 
+void \hyperlink{classroom_8c_a968f53b31c82f060acf3523e2cfa3755}{move\+Table\+Chair} ()
+\begin{DoxyCompactList}\small\item\em Table and Chair. \end{DoxyCompactList}\item 
+void \hyperlink{classroom_8c_ad44a706da47d38cddc8872179ff527e3}{move\+Light} ()
+\begin{DoxyCompactList}\small\item\em Light. \end{DoxyCompactList}\item 
+void \hyperlink{classroom_8c_a4ea013001a5fb47853d0fab8f8de35cd}{display} (void)
+\item 
+void \hyperlink{classroom_8c_ac76a5d78172a826cd6ee9512b89a86c0}{mouse} (int button, int state, int x, int y)
+\begin{DoxyCompactList}\small\item\em Mouse. \end{DoxyCompactList}\item 
+void \hyperlink{classroom_8c_aeed201504c3705ba28fd8e9833270919}{projection} ()
+\begin{DoxyCompactList}\small\item\em Projection. \end{DoxyCompactList}\item 
+void \hyperlink{classroom_8c_a5828243a546dac120bbeb4679ac4d828}{keys} (unsigned char key, int x, int y)
+\begin{DoxyCompactList}\small\item\em Keys. \end{DoxyCompactList}\item 
+void \hyperlink{classroom_8c_a45a7d7c86c97ca6a2d4d32ce2d263f67}{motion} (int x, int y)
+\item 
+void \hyperlink{classroom_8c_ae659bda7aa3ae9f52f7fed05f3c900fb}{my\+Reshape} (int w, int h)
+\item 
+void \hyperlink{classroom_8c_a70db8bd1d499619f7ff9c1ca2ff3c8df}{main} (int argc, char $\ast$$\ast$argv)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classroom_8c_a8f0744c55ee97ebf34757f8499a66139}{startx}
+\item 
+int \hyperlink{classroom_8c_a19e264821cbd530471c1cf985d7cd239}{starty}
+\item 
+int \hyperlink{classroom_8c_ad892143587536d5edaac114b6d9b38f6}{moving}
+\item 
+int \hyperlink{classroom_8c_a0e2c6074b080f7edcb7ed453e39b005b}{fov} = 55
+\item 
+int \hyperlink{classroom_8c_a973a4b0bc2b43673256177f0ba80e782}{aspect}
+\item 
+int \hyperlink{classroom_8c_a5fb7c572958b9d030934749cdd2f178e}{toggle} = 0
+\item 
+G\+Lfloat \hyperlink{classroom_8c_a401a83e618c5b2d6c0177db94da9e1b9}{theta} \mbox{[}$\,$\mbox{]} = \{0.\+0, 0.\+0, 0.\+0\}
+\item 
+G\+Lint \hyperlink{classroom_8c_a0574e179ce24d35f17992f5ad28235d6}{axis} = 2
+\item 
+G\+Ldouble \hyperlink{classroom_8c_a50c64dec1be3f9591fcc2fc5ef5f4ed0}{viewer} \mbox{[}$\,$\mbox{]} = \{0.\+0, 2.\+5, 5.\+0\}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{classroom_8c_a28f144e3ae325aa63fb91a6b75eaba6e}\label{classroom_8c_a28f144e3ae325aa63fb91a6b75eaba6e}} 
+\index{classroom.\+c@{classroom.\+c}!board@{board}}
+\index{board@{board}!classroom.\+c@{classroom.\+c}}
+\subsubsection{\texorpdfstring{board()}{board()}}
+{\footnotesize\ttfamily void board (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Green Board. 
+
+Function to draw the green board. \mbox{\Hypertarget{classroom_8c_a2e6fc65854be6d6cbc04fab0849bf696}\label{classroom_8c_a2e6fc65854be6d6cbc04fab0849bf696}} 
+\index{classroom.\+c@{classroom.\+c}!combined\+Chair@{combined\+Chair}}
+\index{combined\+Chair@{combined\+Chair}!classroom.\+c@{classroom.\+c}}
+\subsubsection{\texorpdfstring{combined\+Chair()}{combinedChair()}}
+{\footnotesize\ttfamily void combined\+Chair (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Chair. 
+
+Function to draw set of chair. \mbox{\Hypertarget{classroom_8c_a849eed1989d75b24db77950570675ad5}\label{classroom_8c_a849eed1989d75b24db77950570675ad5}} 
+\index{classroom.\+c@{classroom.\+c}!combined\+Student\+Table@{combined\+Student\+Table}}
+\index{combined\+Student\+Table@{combined\+Student\+Table}!classroom.\+c@{classroom.\+c}}
+\subsubsection{\texorpdfstring{combined\+Student\+Table()}{combinedStudentTable()}}
+{\footnotesize\ttfamily void combined\+Student\+Table (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classroom_8c_a4ea013001a5fb47853d0fab8f8de35cd}\label{classroom_8c_a4ea013001a5fb47853d0fab8f8de35cd}} 
+\index{classroom.\+c@{classroom.\+c}!display@{display}}
+\index{display@{display}!classroom.\+c@{classroom.\+c}}
+\subsubsection{\texorpdfstring{display()}{display()}}
+{\footnotesize\ttfamily void display (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classroom_8c_a36da52bf2f0fb2250a853881e99784d3}\label{classroom_8c_a36da52bf2f0fb2250a853881e99784d3}} 
+\index{classroom.\+c@{classroom.\+c}!door@{door}}
+\index{door@{door}!classroom.\+c@{classroom.\+c}}
+\subsubsection{\texorpdfstring{door()}{door()}}
+{\footnotesize\ttfamily void door (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Door. 
+
+Function to draw the door. \mbox{\Hypertarget{classroom_8c_a767b5b39f5fc46dd4681200b115cc560}\label{classroom_8c_a767b5b39f5fc46dd4681200b115cc560}} 
+\index{classroom.\+c@{classroom.\+c}!dustbin@{dustbin}}
+\index{dustbin@{dustbin}!classroom.\+c@{classroom.\+c}}
+\subsubsection{\texorpdfstring{dustbin()}{dustbin()}}
+{\footnotesize\ttfamily void dustbin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Dustbin. 
+
+Function to draw the dustbin. \mbox{\Hypertarget{classroom_8c_afbf920de5c6b004c523e1f1044e6668e}\label{classroom_8c_afbf920de5c6b004c523e1f1044e6668e}} 
+\index{classroom.\+c@{classroom.\+c}!kettle@{kettle}}
+\index{kettle@{kettle}!classroom.\+c@{classroom.\+c}}
+\subsubsection{\texorpdfstring{kettle()}{kettle()}}
+{\footnotesize\ttfamily void kettle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Kettle. 
+
+Function to draw the kettle. \mbox{\Hypertarget{classroom_8c_a5828243a546dac120bbeb4679ac4d828}\label{classroom_8c_a5828243a546dac120bbeb4679ac4d828}} 
+\index{classroom.\+c@{classroom.\+c}!keys@{keys}}
+\index{keys@{keys}!classroom.\+c@{classroom.\+c}}
+\subsubsection{\texorpdfstring{keys()}{keys()}}
+{\footnotesize\ttfamily void keys (\begin{DoxyParamCaption}\item[{unsigned char}]{key,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Keys. 
+
+Function to provide keyboard interactivity.
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & unsigned char variable\+: key pressed \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classroom_8c_a70db8bd1d499619f7ff9c1ca2ff3c8df}\label{classroom_8c_a70db8bd1d499619f7ff9c1ca2ff3c8df}} 
+\index{classroom.\+c@{classroom.\+c}!main@{main}}
+\index{main@{main}!classroom.\+c@{classroom.\+c}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily void main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$$\ast$}]{argv }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classroom_8c_a45a7d7c86c97ca6a2d4d32ce2d263f67}\label{classroom_8c_a45a7d7c86c97ca6a2d4d32ce2d263f67}} 
+\index{classroom.\+c@{classroom.\+c}!motion@{motion}}
+\index{motion@{motion}!classroom.\+c@{classroom.\+c}}
+\subsubsection{\texorpdfstring{motion()}{motion()}}
+{\footnotesize\ttfamily void motion (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classroom_8c_ac76a5d78172a826cd6ee9512b89a86c0}\label{classroom_8c_ac76a5d78172a826cd6ee9512b89a86c0}} 
+\index{classroom.\+c@{classroom.\+c}!mouse@{mouse}}
+\index{mouse@{mouse}!classroom.\+c@{classroom.\+c}}
+\subsubsection{\texorpdfstring{mouse()}{mouse()}}
+{\footnotesize\ttfamily void mouse (\begin{DoxyParamCaption}\item[{int}]{button,  }\item[{int}]{state,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Mouse. 
+
+Rotates the scene on the press of left mouse button.
+
+
+\begin{DoxyParams}{Parameters}
+{\em button} & integer variable\+: checks which mouse button is pressed \\
+\hline
+{\em state} & integer variable\+: checks state of the pressed button \\
+\hline
+{\em x} & integer variable\+: current x-\/coordinate of mouse pointer \\
+\hline
+{\em y} & integer variable\+: current y-\/coordinate of mouse pointer \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classroom_8c_a19f39b451e2f3ae84c28c6d60ea6cce9}\label{classroom_8c_a19f39b451e2f3ae84c28c6d60ea6cce9}} 
+\index{classroom.\+c@{classroom.\+c}!movedustbin@{movedustbin}}
+\index{movedustbin@{movedustbin}!classroom.\+c@{classroom.\+c}}
+\subsubsection{\texorpdfstring{movedustbin()}{movedustbin()}}
+{\footnotesize\ttfamily void movedustbin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Move Dustbin. 
+
+Function to move dustbin to desired location. \mbox{\Hypertarget{classroom_8c_ad44a706da47d38cddc8872179ff527e3}\label{classroom_8c_ad44a706da47d38cddc8872179ff527e3}} 
+\index{classroom.\+c@{classroom.\+c}!move\+Light@{move\+Light}}
+\index{move\+Light@{move\+Light}!classroom.\+c@{classroom.\+c}}
+\subsubsection{\texorpdfstring{move\+Light()}{moveLight()}}
+{\footnotesize\ttfamily void move\+Light (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Light. 
+
+Function to draw and move light to desired location. \mbox{\Hypertarget{classroom_8c_a968f53b31c82f060acf3523e2cfa3755}\label{classroom_8c_a968f53b31c82f060acf3523e2cfa3755}} 
+\index{classroom.\+c@{classroom.\+c}!move\+Table\+Chair@{move\+Table\+Chair}}
+\index{move\+Table\+Chair@{move\+Table\+Chair}!classroom.\+c@{classroom.\+c}}
+\subsubsection{\texorpdfstring{move\+Table\+Chair()}{moveTableChair()}}
+{\footnotesize\ttfamily void move\+Table\+Chair (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Table and Chair. 
+
+Function to replicate bench and chair. \mbox{\Hypertarget{classroom_8c_ae659bda7aa3ae9f52f7fed05f3c900fb}\label{classroom_8c_ae659bda7aa3ae9f52f7fed05f3c900fb}} 
+\index{classroom.\+c@{classroom.\+c}!my\+Reshape@{my\+Reshape}}
+\index{my\+Reshape@{my\+Reshape}!classroom.\+c@{classroom.\+c}}
+\subsubsection{\texorpdfstring{my\+Reshape()}{myReshape()}}
+{\footnotesize\ttfamily void my\+Reshape (\begin{DoxyParamCaption}\item[{int}]{w,  }\item[{int}]{h }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classroom_8c_a45ddafcbdb98fd1d29ddb26cfaf9bc5f}\label{classroom_8c_a45ddafcbdb98fd1d29ddb26cfaf9bc5f}} 
+\index{classroom.\+c@{classroom.\+c}!podium\+Final@{podium\+Final}}
+\index{podium\+Final@{podium\+Final}!classroom.\+c@{classroom.\+c}}
+\subsubsection{\texorpdfstring{podium\+Final()}{podiumFinal()}}
+{\footnotesize\ttfamily void podium\+Final (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Dice. 
+
+Function to draw the dice (podium). \mbox{\Hypertarget{classroom_8c_aeed201504c3705ba28fd8e9833270919}\label{classroom_8c_aeed201504c3705ba28fd8e9833270919}} 
+\index{classroom.\+c@{classroom.\+c}!projection@{projection}}
+\index{projection@{projection}!classroom.\+c@{classroom.\+c}}
+\subsubsection{\texorpdfstring{projection()}{projection()}}
+{\footnotesize\ttfamily void projection (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Projection. 
+
+Select the mode of projection. \mbox{\Hypertarget{classroom_8c_a0119467e1ce41ffb01b5081d6941efdf}\label{classroom_8c_a0119467e1ce41ffb01b5081d6941efdf}} 
+\index{classroom.\+c@{classroom.\+c}!stage\+Final@{stage\+Final}}
+\index{stage\+Final@{stage\+Final}!classroom.\+c@{classroom.\+c}}
+\subsubsection{\texorpdfstring{stage\+Final()}{stageFinal()}}
+{\footnotesize\ttfamily void stage\+Final (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Stage. 
+
+Function to draw the stage. \mbox{\Hypertarget{classroom_8c_ac70e5256caddd8938e124804765a924e}\label{classroom_8c_ac70e5256caddd8938e124804765a924e}} 
+\index{classroom.\+c@{classroom.\+c}!student\+Table@{student\+Table}}
+\index{student\+Table@{student\+Table}!classroom.\+c@{classroom.\+c}}
+\subsubsection{\texorpdfstring{student\+Table()}{studentTable()}}
+{\footnotesize\ttfamily void student\+Table (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Student\textquotesingle{}s Bench. 
+
+Function to draw the student bench. \mbox{\Hypertarget{classroom_8c_a2547a98dc1e6d988f39ef2eaa2dba6d0}\label{classroom_8c_a2547a98dc1e6d988f39ef2eaa2dba6d0}} 
+\index{classroom.\+c@{classroom.\+c}!teacher\+Table@{teacher\+Table}}
+\index{teacher\+Table@{teacher\+Table}!classroom.\+c@{classroom.\+c}}
+\subsubsection{\texorpdfstring{teacher\+Table()}{teacherTable()}}
+{\footnotesize\ttfamily void teacher\+Table (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Teacher\textquotesingle{}s Table. 
+
+Function to draw the teacher\textquotesingle{}s table. 
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{classroom_8c_a973a4b0bc2b43673256177f0ba80e782}\label{classroom_8c_a973a4b0bc2b43673256177f0ba80e782}} 
+\index{classroom.\+c@{classroom.\+c}!aspect@{aspect}}
+\index{aspect@{aspect}!classroom.\+c@{classroom.\+c}}
+\subsubsection{\texorpdfstring{aspect}{aspect}}
+{\footnotesize\ttfamily int aspect}
+
+\mbox{\Hypertarget{classroom_8c_a0574e179ce24d35f17992f5ad28235d6}\label{classroom_8c_a0574e179ce24d35f17992f5ad28235d6}} 
+\index{classroom.\+c@{classroom.\+c}!axis@{axis}}
+\index{axis@{axis}!classroom.\+c@{classroom.\+c}}
+\subsubsection{\texorpdfstring{axis}{axis}}
+{\footnotesize\ttfamily G\+Lint axis = 2}
+
+\mbox{\Hypertarget{classroom_8c_a0e2c6074b080f7edcb7ed453e39b005b}\label{classroom_8c_a0e2c6074b080f7edcb7ed453e39b005b}} 
+\index{classroom.\+c@{classroom.\+c}!fov@{fov}}
+\index{fov@{fov}!classroom.\+c@{classroom.\+c}}
+\subsubsection{\texorpdfstring{fov}{fov}}
+{\footnotesize\ttfamily int fov = 55}
+
+\mbox{\Hypertarget{classroom_8c_ad892143587536d5edaac114b6d9b38f6}\label{classroom_8c_ad892143587536d5edaac114b6d9b38f6}} 
+\index{classroom.\+c@{classroom.\+c}!moving@{moving}}
+\index{moving@{moving}!classroom.\+c@{classroom.\+c}}
+\subsubsection{\texorpdfstring{moving}{moving}}
+{\footnotesize\ttfamily int moving}
+
+\mbox{\Hypertarget{classroom_8c_a8f0744c55ee97ebf34757f8499a66139}\label{classroom_8c_a8f0744c55ee97ebf34757f8499a66139}} 
+\index{classroom.\+c@{classroom.\+c}!startx@{startx}}
+\index{startx@{startx}!classroom.\+c@{classroom.\+c}}
+\subsubsection{\texorpdfstring{startx}{startx}}
+{\footnotesize\ttfamily int startx}
+
+\mbox{\Hypertarget{classroom_8c_a19e264821cbd530471c1cf985d7cd239}\label{classroom_8c_a19e264821cbd530471c1cf985d7cd239}} 
+\index{classroom.\+c@{classroom.\+c}!starty@{starty}}
+\index{starty@{starty}!classroom.\+c@{classroom.\+c}}
+\subsubsection{\texorpdfstring{starty}{starty}}
+{\footnotesize\ttfamily int starty}
+
+\mbox{\Hypertarget{classroom_8c_a401a83e618c5b2d6c0177db94da9e1b9}\label{classroom_8c_a401a83e618c5b2d6c0177db94da9e1b9}} 
+\index{classroom.\+c@{classroom.\+c}!theta@{theta}}
+\index{theta@{theta}!classroom.\+c@{classroom.\+c}}
+\subsubsection{\texorpdfstring{theta}{theta}}
+{\footnotesize\ttfamily G\+Lfloat theta\mbox{[}$\,$\mbox{]} = \{0.\+0, 0.\+0, 0.\+0\}}
+
+\mbox{\Hypertarget{classroom_8c_a5fb7c572958b9d030934749cdd2f178e}\label{classroom_8c_a5fb7c572958b9d030934749cdd2f178e}} 
+\index{classroom.\+c@{classroom.\+c}!toggle@{toggle}}
+\index{toggle@{toggle}!classroom.\+c@{classroom.\+c}}
+\subsubsection{\texorpdfstring{toggle}{toggle}}
+{\footnotesize\ttfamily int toggle = 0}
+
+\mbox{\Hypertarget{classroom_8c_a50c64dec1be3f9591fcc2fc5ef5f4ed0}\label{classroom_8c_a50c64dec1be3f9591fcc2fc5ef5f4ed0}} 
+\index{classroom.\+c@{classroom.\+c}!viewer@{viewer}}
+\index{viewer@{viewer}!classroom.\+c@{classroom.\+c}}
+\subsubsection{\texorpdfstring{viewer}{viewer}}
+{\footnotesize\ttfamily G\+Ldouble viewer\mbox{[}$\,$\mbox{]} = \{0.\+0, 2.\+5, 5.\+0\}}
+

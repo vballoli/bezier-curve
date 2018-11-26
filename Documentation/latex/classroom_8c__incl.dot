@@ -1,0 +1,24 @@
+digraph "classroom.c"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node0 [label="classroom.c",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node0 -> Node1 [color="midnightblue",fontsize="10",style="solid"];
+  Node1 [label="stdlib.h",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node0 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="GL/glut.h",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node0 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="primitive.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$primitive_8h.html"];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="dice.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dice_8h.html"];
+  Node3 -> Node5 [color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="teacherTable.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$teacherTable_8h.html"];
+  Node3 -> Node6 [color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="stage.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$stage_8h.html"];
+  Node3 -> Node7 [color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="infra.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$infra_8h.html"];
+  Node3 -> Node8 [color="midnightblue",fontsize="10",style="solid"];
+  Node8 [label="tableChair.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$tableChair_8h.html"];
+  Node3 -> Node9 [color="midnightblue",fontsize="10",style="solid"];
+  Node9 [label="light.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$light_8h.html"];
+}

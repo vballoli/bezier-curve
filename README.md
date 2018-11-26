@@ -16,7 +16,7 @@ t is controlled using RES parameter in the code.
 
 ## Run instructions
 
-`gcc bezier.c -lLG -lGLU -lglut`
+`gcc bezier.c -lGL -lGLU -lglut`
 
 ### Keyboard shortcuts:
 

@@ -1,0 +1,25 @@
+Bezier curve is a curve of degree n with n+1 control points. This project aims to implement a bezier curve using de casteljau\textquotesingle{}s algorithm in Open\+GL.
+
+\subsection*{Algorithm}
+
+Lerp is recursively applied to the control points until it converges to a single point.
+
+Addition of point\+: Add\textquotesingle{}s x,y to the 2D control array.
+
+Deletion of point\+: Removes x,y from the 2D control array within a T\+O\+U\+C\+H\+\_\+\+B\+U\+F\+F\+ER range.
+
+Dragging a point\+: Stores previous touch and current point on lift off within the T\+O\+U\+C\+H\+\_\+\+B\+U\+F\+F\+ER and changes the point.
+
+t is controlled using R\+ES parameter in the code.
+
+\subsection*{Run instructions}
+
+{\ttfamily gcc \hyperlink{bezier_8c}{bezier.\+c} -\/l\+LG -\/l\+G\+LU -\/lglut}
+
+\subsubsection*{Keyboard shortcuts\+:}
+
+`a\+: adds point on the cuurve d\+: delete\textquotesingle{}s point on the curve b\+: draggable points on the curve`
+
+\subsubsection*{Mouse shortcuts}
+
+{\ttfamily Left click only} 
